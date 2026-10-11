@@ -1,0 +1,16 @@
+# 1. Install Capacitor
+npm install @capacitor/core
+npm install -D @capacitor/cli @capacitor/android
+
+# 2. Initialize Capacitor
+npx cap init "Zoya AI" "com.zoya.assistant" --web-dir dist
+
+# 3. Build web production bundle
+npm run build
+
+# 4. Add Android platform & Sync
+npx cap add android
+npx cap sync android
+
+# 5. Open in Android Studio
+npx cap open android
